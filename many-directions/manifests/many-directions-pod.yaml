@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: manydirections
+  labels:
+      app: manydirections
+spec:
+  containers:
+  - name: many-directions
+    image: mnoorali/many-directions:1.0.0
+    ports:
+      - containerPort: 8080
+    readinessProbe:
+      httpGet:
+        # Path to probe
+        path: /ready
+        port: 8080
+      initialDelaySeconds: 10
+      timeoutSeconds: 1

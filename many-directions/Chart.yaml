@@ -1,0 +1,9 @@
+name: many-directions
+home: http://www.github.com/helm-charts/many-directions/
+version: 0.0.1
+description: puffy's body band.
+maintainers:
+  - Michelle Noorali <michelle@deis.com>
+details:
+  Go web server that grabs top One Direction tracks from Spotify, stores them in redis, and
+  serves a random song on the /play endpoint. It also specifies a readinessProbe for the app.
