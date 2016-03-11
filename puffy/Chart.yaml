@@ -1,0 +1,8 @@
+name: puffy
+home: http://www.github.com/helm-charts/puffy/
+version: 2.0.1
+description: puffy
+maintainers:
+  - Michelle Noorali <michelle@deis.com>
+details:
+  Puffy is a simple go web server with a livenessProbe

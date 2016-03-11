@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: puffypod
+spec:
+  containers:
+  - name: puffy
+    image: mnoorali/puffy:2.0.1
+    livenessProbe:
+      httpGet:
+          path: /healthz
+          port: 8080
+      initialDelaySeconds: 5
+      timeoutSeconds: 1
+    ports:
+      - containerPort: 8080
