@@ -1,6 +1,6 @@
 name: many-directions
 home: http://www.github.com/helm-charts/many-directions/
-version: 0.0.1
+version: 1.0.0
 description: puffy's body band.
 maintainers:
   - Michelle Noorali <michelle@deis.com>
